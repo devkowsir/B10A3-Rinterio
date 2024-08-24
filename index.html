@@ -11,44 +11,40 @@
   </head>
   <body class="bg-neutral-100 space-y-8">
     <!-- header section -->
-    <header class="bg-gradient-to-b from-neutral-50 to-white">
+    <header id="home" class="bg-gradient-to-b from-neutral-50 to-white">
       <div class="w-11/12 max-w-6xl mx-auto py-8 md:py-10 xl:py-12 text-center">
         <!-- navbar -->
         <nav class="flex gap-4 items-center">
           <!-- logo -->
           <div class="brand brand-light">
-            <div class="arrow-up-right"><img src="./images/arrow-up-right-black.png" alt="arrow-up-right-black" /></div>
+            <div class="rounded-icon bg-lime-300">
+              <img src="./images/arrow-up-right-black.png" alt="arrow-up-right-black" />
+            </div>
             <span>Rinterio</span>
           </div>
           <!-- links -->
           <ul class="ml-auto hidden xl:flex items-center gap-9">
             <li><a href="#home">Home</a></li>
-            <li><a href="#services"></a>Services</li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#blogs">Blogs</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
           <!-- actions -->
           <div class="ml-auto flex items-center gap-4">
-            <button
-              class="w-12 h-12 hidden sm:flex justify-center items-center bg-white rounded-full border border-neutral-200"
-            >
+            <button class="btn-icon">
               <img src="./images/search.png" alt="search" />
             </button>
-            <button
-              class="w-12 h-12 hidden sm:flex justify-center items-center bg-white rounded-full border border-neutral-200"
-            >
+            <button class="btn-icon">
               <img src="./images/shopping-cart.png" alt="shopping-cart" />
             </button>
-            <button class="px-5 py-2.5 hidden md:flex items-center gap-2 rounded-[32px] bg-lime-300">
+            <button class="btn btn-primary hidden md:flex">
               <span class="text-neutral-900 font-extrabold text-xl">Book Consultant</span>
-              <span class="w-7 h-7 flex justify-center items-center bg-neutral-900 rounded-full">
+              <span class="rounded-icon bg-neutral-900">
                 <img src="./images/arrow-up-right-white.png" alt="arrow-up-right" />
               </span>
             </button>
-            <button
-              class="w-12 h-12 flex xl:hidden justify-center items-center bg-white rounded-full border border-neutral-200"
-            >
+            <button class="btn-icon xl:hidden">
               <img src="./images/bars.png" alt="menu" />
             </button>
           </div>
@@ -56,7 +52,7 @@
         <!-- banner section -->
         <div class="mt-8 md:mt-12">
           <img class="w-9/12 max-w-xl mx-auto mt-8" src="./images/banner.png" alt="" />
-          <h1 class="my-4 xl:my-6 text-3xl md:text-4xl lg:text-6xl font-extrabold leading-normal">
+          <h1 class="my-4 xl:my-6 text-3xl md:text-4xl lg:text-6xl font-extrabold">
             A barn house of this design has a striking appearance
           </h1>
           <p class="max-w-4xl mx-auto text-neutral-700">
@@ -67,7 +63,7 @@
             class="mt-5 w-full sm:w-auto mx-auto flex justify-center items-center gap-2 sm:px-5 md:px-6 py-2.5 md:py-3.5 rounded-[32px] bg-lime-200"
           >
             <span class="font-extrabold text-xl">View Details</span>
-            <span class="w-7 h-7 flex justify-center items-center bg-lime-300 rounded-full">
+            <span class="rounded-icon bg-lime-300">
               <img src="./images/arrow-up-right-black.png" alt="arrow-up-right" />
             </span>
           </button>
