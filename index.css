@@ -7,3 +7,25 @@
     font-family: "Manrope", sans-serif;
   }
 }
+
+@layer components {
+  .brand {
+    @apply flex items-center gap-2;
+  }
+
+  .brand .arrow-up-right {
+    @apply w-8 h-8 flex-shrink-0 flex justify-center items-center rounded-full;
+  }
+
+  .brand span {
+    @apply text-[28px] font-extrabold text-neutral-800;
+  }
+
+  .brand-light .arrow-up-right {
+    @apply bg-lime-300;
+  }
+
+  .brand-dark .arrow-up-right {
+    @apply bg-neutral-900;
+  }
+}
