@@ -584,6 +584,7 @@ html {
 .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -637,6 +638,7 @@ html {
 .section-heading button {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   border-radius: 1.5rem;
   padding-left: 1rem;
@@ -688,6 +690,10 @@ html {
 
 .-top-12 {
   top: -3rem;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
 }
 
 .mx-auto {
@@ -798,6 +804,10 @@ html {
   max-width: 56rem;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -812,6 +822,10 @@ html {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-8 {
+  grid-template-rows: repeat(8, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -846,6 +860,10 @@ html {
   gap: 1.25rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -872,6 +890,19 @@ html {
 
 .border {
   border-width: 1px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-emerald-400 {
@@ -926,6 +957,10 @@ html {
 
 .bg-\[url\(\.\/images\/about-us-house\.png\)\] {
   background-image: url(./images/about-us-house.png);
+}
+
+.bg-\[url\(\.\/images\/contact-bg\.jpg\)\] {
+  background-image: url(./images/contact-bg.jpg);
 }
 
 .bg-gradient-to-b {
@@ -986,6 +1021,11 @@ html {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -1286,6 +1326,10 @@ html {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1369,6 +1413,10 @@ html {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-10\/12 {
+    width: 83.333333%;
   }
 
   .lg\:max-w-md {
