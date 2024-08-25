@@ -5,6 +5,7 @@
 @layer base {
   html {
     font-family: "Manrope", sans-serif;
+    scroll-behavior: smooth;
   }
 }
 
@@ -116,4 +117,8 @@
 
 #news p {
   @apply mb-3 text-neutral-600;
+}
+
+#footer .brand span {
+  @apply text-neutral-200;
 }

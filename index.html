@@ -27,7 +27,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#news">Blogs</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
           <!-- actions -->
@@ -74,10 +74,10 @@
     <!-- services -->
     <section
       id="services"
-      class="relative w-11/12 xl:w-10/12 max-w-6xl mx-auto my-8 md:my-16 xl:my-24 flex flex-col lg:flex-row gap-5 lg:gap-8 xl:gap-12"
+      class="relative w-11/12 xl:w-10/12 max-w-6xl mx-auto pt-8 md:pt-16 xl:pt-24 flex flex-col lg:flex-row gap-5 lg:gap-8 xl:gap-12"
     >
       <img
-        class="absolute -top-12 -left-16 hidden xl:block"
+        class="absolute top-10 -left-16 hidden xl:block"
         src="./images/icons/curved-dotted-arrow.png"
         alt="curved-dotted-arrow"
       />
@@ -257,7 +257,7 @@
     </section>
 
     <!-- news section -->
-    <section id="news" class="w-11/12 xl:w-10/12 max-w-6xl mx-auto my-8 md:my-16 xl:my-24">
+    <section id="news" class="w-11/12 xl:w-10/12 max-w-6xl mx-auto py-8 md:py-16 xl:py-24">
       <!-- section heading -->
       <div class="section-heading text-center">
         <button class="mx-auto bg-lime-100">
@@ -381,5 +381,36 @@
         </div>
       </div>
     </section>
+
+    <!-- footer section -->
+    <footer id="footer" class="py-8 bg-neutral-900">
+      <div class="w-11/12 xl:w-10/12 max-w-4xl mx-auto py-8 md:py-16 xl:py-24 flex flex-col items-center text-center">
+        <!-- logo -->
+        <div class="brand brand-light">
+          <div class="rounded-icon bg-lime-300">
+            <img src="./images/icons/arrow-up-right-black.png" alt="arrow-up-right-black" />
+          </div>
+          <span>Rinterio</span>
+        </div>
+        <p class="mt-4 text-neutral-500">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+          sleek metal accents.
+        </p>
+        <!-- links -->
+        <ul class="my-8 md:my-12 flex flex-col sm:flex-row items-center gap-8 md:gap-16 lg:gap-24 text-neutral-200">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#news">Blogs</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button class="btn btn-primary flex">
+          <span class="text-neutral-900 font-extrabold text-xl">Book Consultant</span>
+          <span class="rounded-icon bg-neutral-900">
+            <img src="./images/icons/arrow-up-right-white.png" alt="arrow-up-right" />
+          </span>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
