@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-neutral-100 space-y-8">
+  <body class="bg-neutral-100">
     <!-- header section -->
     <header id="home" class="bg-gradient-to-b from-neutral-50 to-white">
-      <div class="w-11/12 max-w-6xl mx-auto py-8 md:py-10 xl:py-12 text-center">
+      <div class="w-11/12 xl:w-10/12 max-w-6xl mx-auto py-8 md:py-10 xl:py-12 text-center">
         <!-- navbar -->
         <nav class="flex gap-4 items-center">
           <!-- logo -->
@@ -52,7 +52,7 @@
         <!-- banner section -->
         <div class="mt-8 md:mt-12">
           <img class="w-9/12 max-w-xl mx-auto mt-8" src="./images/banner.png" alt="" />
-          <h1 class="my-4 xl:my-6 text-3xl md:text-4xl lg:text-6xl font-extrabold">
+          <h1 class="my-4 xl:my-6 text-3xl md:text-4xl lg:text-6xl font-extrabold text-neutral-800">
             A barn house of this design has a striking appearance
           </h1>
           <p class="max-w-4xl mx-auto text-neutral-700">
@@ -70,5 +70,62 @@
         </div>
       </div>
     </header>
+
+    <!-- services -->
+    <section
+      id="services"
+      class="relative w-11/12 xl:w-10/12 max-w-6xl mx-auto py-8 md:py-16 xl:py-24 flex flex-col lg:flex-row gap-5 lg:gap-8 xl:gap-12"
+    >
+      <img
+        class="absolute top-10 -left-16 hidden xl:block"
+        src="./images/curved-dotted-arrow.png"
+        alt="curved-dotted-arrow"
+      />
+      <div class="flex flex-col gap-5">
+        <!-- section heading -->
+        <div class="section-heading text-center lg:text-left">
+          <button class="mx-auto lg:mx-0 bg-white">
+            <img src="./images/arrow-right.png" alt="arrow-right" />
+            <span>Services</span>
+          </button>
+          <h2>We design thoughtful, liveable spaces</h2>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal accents.
+          </p>
+        </div>
+        <div class="flex flex-row gap-5">
+          <!-- cards -->
+          <ul class="flex gap-5 flex-col sm:flex-row md:flex-col">
+            <li class="flex gap-4 items-start p-4 xl:p-8 bg-white rounded-xl">
+              <img src="./images/commercial.png" alt="commercial" />
+              <div>
+                <h3 class="font-extrabold text-neutral-700 md:text-lg lg:text-xl">Commercial</h3>
+                <p class="mt-3 text-neutral-700">
+                  The barn house captivates with its blend of rustic charm and modern.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-4 items-start p-4 xl:p-8 bg-white rounded-xl">
+              <img src="./images/residential.png" alt="residential" />
+              <div>
+                <h3 class="font-extrabold text-neutral-700 md:text-lg lg:text-xl">Residential</h3>
+                <p class="mt-3 text-neutral-700">
+                  The barn house captivates with its blend of rustic charm and modern.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- image for medium devices only -->
+          <div
+            class="hidden md:block lg:hidden shrink-0 w-1/2 aspect-video bg-[url(./images/about-us-house.png)] bg-cover bg-center rounded-xl"
+          ></div>
+        </div>
+      </div>
+      <!-- image -->
+      <div
+        class="md:hidden lg:block shrink-0 w-full lg:w-1/2 lg:max-w-md aspect-square bg-[url(./images/about-us-house.png)] bg-cover bg-center rounded-xl"
+      ></div>
+    </section>
   </body>
 </html>

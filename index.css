@@ -44,4 +44,16 @@
   .rounded-icon {
     @apply w-7 md:w-8 aspect-square flex justify-center items-center rounded-full;
   }
+
+  .section-heading button {
+    @apply btn btn-secondary;
+  }
+
+  .section-heading h2 {
+    @apply my-4 text-2xl sm:text-3xl lg:text-4xl font-extrabold  text-neutral-800;
+  }
+
+  .section-heading p {
+    @apply text-neutral-700;
+  }
 }
