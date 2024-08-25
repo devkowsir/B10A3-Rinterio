@@ -66,10 +66,26 @@
   @apply flex flex-col justify-center items-center;
 }
 
-#counter h2 {
+#counter h3 {
   @apply mt-2 mb-1 text-3xl lg:text-4xl font-extrabold text-neutral-600;
 }
 
 #counter p {
   @apply text-neutral-500;
+}
+
+#work-process ul {
+  @apply mt-5 md:mt-6 lg:mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 lg:gap-6;
+}
+
+#work-process li {
+  @apply p-4 md:p-6 rounded-xl;
+}
+
+#work-process h3 {
+  @apply my-2 text-xl font-extrabold text-neutral-900;
+}
+
+#work-process p {
+  @apply text-neutral-700;
 }
