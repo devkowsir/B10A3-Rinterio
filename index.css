@@ -57,3 +57,19 @@
     @apply text-neutral-700;
   }
 }
+
+#counter ul {
+  @apply p-8 md:p-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 bg-white rounded-xl;
+}
+
+#counter li {
+  @apply flex flex-col justify-center items-center;
+}
+
+#counter h2 {
+  @apply mt-2 mb-1 text-3xl lg:text-4xl font-extrabold text-neutral-600;
+}
+
+#counter p {
+  @apply text-neutral-500;
+}
