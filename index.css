@@ -108,7 +108,7 @@
 }
 
 #news .info {
-  @apply flex gap-2 justify-center items-center text-neutral-500;
+  @apply flex gap-2 justify-center items-center text-neutral-500 text-sm;
 }
 
 #news h3 {
@@ -121,4 +121,53 @@
 
 #footer .brand span {
   @apply text-neutral-200;
+}
+
+@keyframes scroll-left {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#reviews .overlay {
+  background-image: linear-gradient(to right, white, transparent 20%, transparent 80%, white);
+}
+
+#reviews li {
+  @apply absolute w-64 p-4 flex flex-col border rounded-xl;
+  transform: translateX(calc(100% * var(--child-count)));
+  animation-name: scroll-left;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: linear;
+  animation-delay: calc(var(--animation-duration) / var(--child-count) * (var(--child-count) - var(--child-no)) * -1);
+  animation-iteration-count: infinite;
+}
+
+#reviews li img {
+  @apply mx-auto border-4 border-neutral-700 rounded-full;
+}
+
+#reviews li p {
+  @apply my-4 text-neutral-600;
+}
+
+#reviews li span:nth-of-type(1) {
+  @apply text-neutral-900;
+}
+
+#reviews li span:last-child {
+  @apply font-extrabold text-sm text-neutral-700;
+}
+
+#reviews li::before,
+#reviews li::after {
+  @apply text-9xl text-neutral-300;
+}
+
+#reviews li::before {
+  @apply absolute content-['“'] top-0 left-0 translate-x-6 translate-y-4;
+}
+
+#reviews li::after {
+  @apply absolute content-['„'] bottom-0 right-0 -translate-x-6 -translate-y-8;
 }
