@@ -12,7 +12,7 @@
   <body class="bg-neutral-100">
     <!-- header section -->
     <header id="home" class="bg-gradient-to-b from-neutral-50 to-white">
-      <div class="w-11/12 xl:w-10/12 max-w-6xl mx-auto py-8 md:py-10 xl:py-12 text-center">
+      <div class="w-11/12 xl:w-10/12 max-w-6xl mx-auto py-8 md:py-16 xl:py-24 text-center">
         <!-- navbar -->
         <nav class="flex gap-4 items-center">
           <!-- logo -->
@@ -129,7 +129,7 @@
     </section>
 
     <!-- counter section -->
-    <section id="counter" class="w-11/12 xl:w-10/12 max-w-6xl mx-auto my-8 md:my-10 xl:my-12 text-center">
+    <section id="counter" class="w-11/12 xl:w-10/12 max-w-6xl mx-auto my-8 md:my-16 xl:my-24 text-center">
       <ul>
         <li>
           <img src="./images/icons/comment.png" alt="clients" />
@@ -155,7 +155,7 @@
     </section>
 
     <!-- work process section -->
-    <section id="work-process" class="w-11/12 xl:w-10/12 max-w-6xl mx-auto my-8 md:my-10 xl:my-12">
+    <section id="work-process" class="w-11/12 xl:w-10/12 max-w-6xl mx-auto my-8 md:my-16 xl:my-24">
       <!-- section heading -->
       <div class="section-heading text-center">
         <button class="mx-auto bg-white">
@@ -191,6 +191,69 @@
           <p>The barn house captivates with its blend of rustic charm and modern.</p>
         </li>
       </ul>
+    </section>
+
+    <!-- portfolio section -->
+    <section id="portfolio" class="xl:bg-white">
+      <!-- section heading -->
+      <div class="w-11/12 xl:w-10/12 max-w-6xl mx-auto py-8 md:py-16 xl:py-24">
+        <div class="section-heading text-center">
+          <button class="mx-auto bg-lime-100">
+            <img src="./images/icons/arrow-right.png" alt="arrow-right" />
+            <span>Explore our latest works</span>
+          </button>
+          <h2>Our Latest Portfolio</h2>
+          <p class="max-w-2xl mx-auto">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- big cards -->
+        <ul class="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <li class="md:col-span-2 flex flex-col md:flex-row gap-5">
+            <img src="./images/portfolio-1.png" alt="" />
+            <div>
+              <h3 class="text-xl md:text-2xl text-neutral-800 font-extrabold">Commercial</h3>
+              <p class="my-4 md:my-5 text-neutral-600">
+                The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its
+                blend of rustic charm and modern .
+              </p>
+              <button class="btn">
+                <span>View Details</span>
+                <span class="rounded-icon bg-lime-300">
+                  <img src="./images/icons/arrow-up-right-black.png" alt="" />
+                </span>
+              </button>
+            </div>
+          </li>
+          <li class=""><img class="w-full h-full object-cover rounded-xl" src="./images/portfolio-2.png" alt="" /></li>
+          <li class="lg:hidden">
+            <img class="w-full h-full object-cover rounded-xl" src="./images/portfolio-3.png" alt="" />
+          </li>
+        </ul>
+        <!-- small cards -->
+        <ul class="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <li class="lg:order-1 md:col-span-2 flex flex-col md:flex-row gap-4">
+            <img src="./images/portfolio-4.png" alt="" />
+            <div>
+              <h3 class="text-xl md:text-2xl text-neutral-800 font-extrabold">Commercial</h3>
+              <p class="my-4 text-neutral-600">The barn house captivates with its blend of rustic charm and modern.</p>
+              <button class="btn">
+                <span>View Details</span>
+                <span class="rounded-icon bg-lime-300">
+                  <img src="./images/icons/arrow-up-right-black.png" alt="" />
+                </span>
+              </button>
+            </div>
+          </li>
+          <li class="lg:order-0">
+            <img class="w-full h-full object-cover rounded-xl" src="./images/portfolio-5.png" alt="" />
+          </li>
+          <li class="lg:order-2">
+            <img class="w-full h-full object-cover rounded-xl" src="./images/portfolio-6.png" alt="" />
+          </li>
+        </ul>
+      </div>
     </section>
   </body>
 </html>

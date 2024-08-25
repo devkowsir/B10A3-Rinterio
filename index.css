@@ -89,3 +89,11 @@
 #work-process p {
   @apply text-neutral-700;
 }
+
+#portfolio li {
+  @apply p-4 border rounded-3xl bg-white;
+}
+
+#portfolio li > img {
+  @apply w-full;
+}
