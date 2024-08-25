@@ -97,3 +97,23 @@
 #portfolio li > img {
   @apply w-full;
 }
+
+#news .card {
+  @apply flex flex-col md:flex-row lg:flex-col gap-4 p-4 rounded-3xl bg-white;
+}
+
+#news .infos {
+  @apply flex gap-4;
+}
+
+#news .info {
+  @apply flex gap-2 justify-center items-center text-neutral-500;
+}
+
+#news h3 {
+  @apply my-2 text-xl text-neutral-800 font-extrabold;
+}
+
+#news p {
+  @apply mb-3 text-neutral-600;
+}
