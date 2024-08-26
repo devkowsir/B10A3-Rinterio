@@ -709,10 +709,6 @@ html {
   top: 2.5rem;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .row-span-3 {
   grid-row: span 3 / span 3;
 }
@@ -773,6 +769,10 @@ html {
   margin-top: 2rem;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -811,10 +811,6 @@ html {
 
 .w-12 {
   width: 3rem;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .w-7 {
@@ -860,10 +856,6 @@ html {
 
 .translate-x-6 {
   --tw-translate-x: 1.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1350,27 +1342,29 @@ html {
 
 @keyframes scroll-left {
   to {
-    transform: translateX(-100%);
+    translate: -100%;
   }
 }
 
-#reviews .overlay {
-  background-image: linear-gradient(to right, white, transparent 20%, transparent 80%, white);
+#reviews ul {
+  width: min(calc((var(--child-width) + var(--gap)) * (var(--child-count) - 1)), 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+          mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
 }
 
 #reviews li {
   position: absolute;
   display: flex;
-  width: 16rem;
   flex-direction: column;
   border-radius: 0.75rem;
   border-width: 1px;
   padding: 1rem;
-  transform: translateX(calc(100% * var(--child-count)));
+  width: var(--child-width);
+  translate: calc((var(--child-width) + var(--gap)) * (var(--child-count) - 1));
   animation-name: scroll-left;
-  animation-duration: var(--animation-duration);
+  animation-duration: calc(var(--animation-duration-per-child) * var(--child-count));
   animation-timing-function: linear;
-  animation-delay: calc(var(--animation-duration) / var(--child-count) * (var(--child-count) - var(--child-no)) * -1);
+  animation-delay: calc(var(--animation-duration-per-child) * (var(--child-count) - var(--child-no)) * -1);
   animation-iteration-count: infinite;
 }
 
@@ -1391,6 +1385,7 @@ html {
 }
 
 #reviews li span:nth-of-type(1) {
+  margin-top: auto;
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
@@ -1405,6 +1400,7 @@ html {
 
 #reviews li::before,
 #reviews li::after {
+  position: absolute;
   font-size: 8rem;
   line-height: 1;
   --tw-text-opacity: 1;
@@ -1412,7 +1408,6 @@ html {
 }
 
 #reviews li::before {
-  position: absolute;
   top: 0px;
   left: 0px;
   --tw-translate-x: 1.5rem;
@@ -1423,7 +1418,6 @@ html {
 }
 
 #reviews li::after {
-  position: absolute;
   bottom: 0px;
   right: 0px;
   --tw-translate-x: -1.5rem;

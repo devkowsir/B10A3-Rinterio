@@ -125,21 +125,23 @@
 
 @keyframes scroll-left {
   to {
-    transform: translateX(-100%);
+    translate: -100%;
   }
 }
 
-#reviews .overlay {
-  background-image: linear-gradient(to right, white, transparent 20%, transparent 80%, white);
+#reviews ul {
+  width: min(calc((var(--child-width) + var(--gap)) * (var(--child-count) - 1)), 100%);
+  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
 }
 
 #reviews li {
-  @apply absolute w-64 p-4 flex flex-col border rounded-xl;
-  transform: translateX(calc(100% * var(--child-count)));
+  @apply absolute p-4 flex flex-col border rounded-xl;
+  width: var(--child-width);
+  translate: calc((var(--child-width) + var(--gap)) * (var(--child-count) - 1));
   animation-name: scroll-left;
-  animation-duration: var(--animation-duration);
+  animation-duration: calc(var(--animation-duration-per-child) * var(--child-count));
   animation-timing-function: linear;
-  animation-delay: calc(var(--animation-duration) / var(--child-count) * (var(--child-count) - var(--child-no)) * -1);
+  animation-delay: calc(var(--animation-duration-per-child) * (var(--child-count) - var(--child-no)) * -1);
   animation-iteration-count: infinite;
 }
 
@@ -152,7 +154,7 @@
 }
 
 #reviews li span:nth-of-type(1) {
-  @apply text-neutral-900;
+  @apply mt-auto text-neutral-900;
 }
 
 #reviews li span:last-child {
@@ -161,13 +163,13 @@
 
 #reviews li::before,
 #reviews li::after {
-  @apply text-9xl text-neutral-300;
+  @apply absolute text-9xl text-neutral-300;
 }
 
 #reviews li::before {
-  @apply absolute content-['“'] top-0 left-0 translate-x-6 translate-y-4;
+  @apply content-['“'] top-0 left-0 translate-x-6 translate-y-4;
 }
 
 #reviews li::after {
-  @apply absolute content-['„'] bottom-0 right-0 -translate-x-6 -translate-y-8;
+  @apply content-['„'] bottom-0 right-0 -translate-x-6 -translate-y-8;
 }
