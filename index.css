@@ -100,7 +100,7 @@
 }
 
 #news .card {
-  @apply flex flex-col md:flex-row lg:flex-col gap-4 p-4 rounded-3xl bg-white;
+  @apply w-full flex flex-col md:flex-row lg:flex-col gap-4 p-4 rounded-3xl bg-white;
 }
 
 #news .infos {
@@ -135,7 +135,7 @@
 }
 
 #reviews li {
-  @apply absolute p-4 flex flex-col border rounded-xl;
+  @apply absolute top-1/2 -translate-y-1/2 p-4 flex flex-col border rounded-xl;
   width: var(--child-width);
   translate: calc((var(--child-width) + var(--gap)) * (var(--child-count) - 1));
   animation-name: scroll-left;
@@ -150,15 +150,15 @@
 }
 
 #reviews li p {
-  @apply my-4 text-neutral-600;
+  @apply my-4 text-neutral-600 font-medium;
 }
 
 #reviews li span:nth-of-type(1) {
-  @apply mt-auto text-neutral-900;
+  @apply text-neutral-900 font-semibold;
 }
 
 #reviews li span:last-child {
-  @apply font-extrabold text-sm text-neutral-700;
+  @apply text-sm text-neutral-600;
 }
 
 #reviews li::before,
