@@ -83,6 +83,10 @@
   @apply p-4 md:p-6 rounded-xl;
 }
 
+#work-process li > img {
+  @apply w-12 aspect-square;
+}
+
 #work-process h3 {
   @apply my-2 text-xl font-extrabold text-neutral-900;
 }
@@ -101,6 +105,10 @@
 
 #news .card {
   @apply w-full flex flex-col md:flex-row lg:flex-col gap-4 p-4 rounded-3xl bg-white;
+}
+
+#news li > img {
+  @apply w-full aspect-[326/180];
 }
 
 #news .infos {
@@ -146,7 +154,7 @@
 }
 
 #reviews li img {
-  @apply mx-auto border-4 border-neutral-700 rounded-full;
+  @apply w-14 aspect-square mx-auto border-4 border-neutral-700 rounded-full;
 }
 
 #reviews li p {
